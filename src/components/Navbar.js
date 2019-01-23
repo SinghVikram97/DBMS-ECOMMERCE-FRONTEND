@@ -7,18 +7,37 @@ export default class Navbar extends Component {
         <nav className="nav-wrapper">
           <div className="container">
             <Link to="/" className="brand-logo">
-              <i className="material-icons Large">add_shopping_cart</i>
+              <i className="material-icons Large pt1 addPadding">
+                add_shopping_cart
+              </i>
               E-Cart
             </Link>
             <a href="#abc" data-target="mobile-demo" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
-            <ul className="right hide-on-med-and-down">
+            <ul className="nav-list right hide-on-med-and-down">
               <li>
                 <Link to="/signin">Sign In</Link>
               </li>
               <li>
                 <Link to="/signup">Sign Up</Link>
+              </li>
+              <li>
+                <i
+                  class="material-icons prefix pt1 pl3 pr4"
+                  style={{ cursor: "pointer" }}
+                >
+                  search
+                </i>
+              </li>
+              <li>Cart</li>
+              <li>
+                <i
+                  class="material-icons prefix pt1 pl4"
+                  style={{ cursor: "pointer" }}
+                >
+                  add_shopping_cart
+                </i>
               </li>
             </ul>
           </div>

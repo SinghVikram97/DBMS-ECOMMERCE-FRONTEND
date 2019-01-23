@@ -16,3 +16,15 @@ code {
 nav {
   background-color: #282d3b !important;
 }
+
+@media screen and (max-width: 600px) {
+  .pt1 {
+    padding-top: -0.75rem !important;
+  }
+}
+.nav-list li {
+  font-size: 130%;
+}
+.nav-list li a {
+  font-size: 100%;
+}
