@@ -16,11 +16,14 @@ export default class Navbar extends Component {
               <i class="material-icons">menu</i>
             </a>
             <ul className="nav-list right hide-on-med-and-down">
-              <li>
-                <Link to="/signin">Sign In</Link>
-              </li>
-              <li>
-                <Link to="/signup">Sign Up</Link>
+              <li style={{ marginTop: "-4px" }}>
+                <input
+                  placeholder="Search"
+                  id="search"
+                  type="text"
+                  class="validate"
+                  style={{ color: "white" }}
+                />
               </li>
               <li>
                 <i
@@ -29,6 +32,12 @@ export default class Navbar extends Component {
                 >
                   search
                 </i>
+              </li>
+              <li>
+                <Link to="/signin">Sign In</Link>
+              </li>
+              <li className="pr3">
+                <Link to="/signup">Sign Up</Link>
               </li>
               <li>Cart</li>
               <li>
