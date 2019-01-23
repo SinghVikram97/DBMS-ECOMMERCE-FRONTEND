@@ -58,7 +58,7 @@ export default class SignUp extends Component {
                       className="blue pl4 pr4 darken-3 white-text br4 waves-effect waves-light btn"
                       style={{ paddingBottom: "3rem", paddingTop: "0.5rem" }}
                     >
-                      SIGN IN WITH FACEBOOK
+                      SIGN UP WITH FACEBOOK
                     </a>
                   </div>
                 </div>
@@ -69,7 +69,7 @@ export default class SignUp extends Component {
                       className="red  pl4 pr4 accent-4 white-text br4 waves-effect waves-light btn"
                       style={{ paddingBottom: "3rem", paddingTop: "0.5rem" }}
                     >
-                      SIGN IN WITH GOOGLE
+                      SIGN UP WITH GOOGLE
                     </a>
                   </div>
                 </div>
