@@ -28,3 +28,24 @@ nav {
 .nav-list li a {
   font-size: 100%;
 }
+.border {
+  border: 1px solid black;
+}
+.starColor {
+  color: #ffbe00;
+}
+.font {
+  font-family: "Rubik", sans-serif !important;
+}
+.numOrders {
+  display: inline-block;
+  background-color: #2a9cf5;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 6px;
+  margin-left: 20px;
+  position: relative;
+}
+.blueColor {
+  color: #2a9cf5;
+}

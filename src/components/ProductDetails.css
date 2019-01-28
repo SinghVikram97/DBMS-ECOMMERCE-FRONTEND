@@ -1,0 +1,66 @@
+.boldFont {
+  color: #232b37;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+.rubikFont {
+  font-family: "Rubik", sans-serif;
+}
+.addToCart li {
+  display: inline-block;
+}
+.qty-minus {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.qty-total {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.qty-plus {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e5e5e5;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.activities li {
+  display: inline-block;
+  padding-right: 2%;
+}
+.activitiesIcon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #eeeeee;
+  border: 2px solid #eeeeee;
+  color: #838b97;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.activitiesIcon:hover {
+  background-color: rgb(42, 156, 245);
+  color: white;
+}
