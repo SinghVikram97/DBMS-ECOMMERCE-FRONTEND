@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import ProductDetails from "./components/ProductDetails";
+import Cart from "./components/Cart";
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
             <Route exact path="/signin" component={SignIn} />
             <Route exact path="/signup" component={SignUp} />
             <Route exact path="/product" component={ProductDetails} />
+            <Route exact path="/cart" component={Cart} />
           </Switch>
         </div>
       </BrowserRouter>

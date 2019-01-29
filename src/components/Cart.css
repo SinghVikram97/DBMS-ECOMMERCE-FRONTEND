@@ -1,0 +1,25 @@
+.input-field {
+  border: 2px solid #efefef !important;
+  width: 100%;
+  height: 60px;
+  padding: 0 30px;
+  border-radius: 6px;
+  color: red;
+}
+.submit-button {
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #2a9cf5;
+  border: none;
+}
+.coupon::placeholder {
+  color: "red";
+}
+#couponInput {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+#couponInput::placeholder {
+  color: rgb(73, 72, 72);
+  padding-left: 8%;
+}
