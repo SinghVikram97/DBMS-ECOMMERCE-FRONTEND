@@ -39,7 +39,9 @@ export default class Navbar extends Component {
               <li className="pr3">
                 <Link to="/signup">Sign Up</Link>
               </li>
-              <li>Cart</li>
+              <li>
+                <Link to="/cart">Cart</Link>
+              </li>
               <li>
                 <i
                   class="material-icons prefix pt1 pl4"

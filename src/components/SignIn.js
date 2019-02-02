@@ -23,7 +23,10 @@ export default class SignIn extends Component {
                     />
                   </div>
                   <div class="row">
-                    <div class="input-field col s12">
+                    <div
+                      class="input-field col s12"
+                      style={{ width: "95.5%", marginLeft: "2.5%" }}
+                    >
                       <input
                         id="password"
                         type="password"
