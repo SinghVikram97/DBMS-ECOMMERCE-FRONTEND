@@ -1,7 +1,7 @@
 {
   "main.css": "/DBMS-ECOMMERCE-FRONTEND/static/css/main.2e196c69.chunk.css",
-  "main.js": "/DBMS-ECOMMERCE-FRONTEND/static/js/main.eb5ad67e.chunk.js",
-  "main.js.map": "/DBMS-ECOMMERCE-FRONTEND/static/js/main.eb5ad67e.chunk.js.map",
+  "main.js": "/DBMS-ECOMMERCE-FRONTEND/static/js/main.39b19ea9.chunk.js",
+  "main.js.map": "/DBMS-ECOMMERCE-FRONTEND/static/js/main.39b19ea9.chunk.js.map",
   "static/css/1.43898583.chunk.css": "/DBMS-ECOMMERCE-FRONTEND/static/css/1.43898583.chunk.css",
   "static/js/1.d7de5271.chunk.js": "/DBMS-ECOMMERCE-FRONTEND/static/js/1.d7de5271.chunk.js",
   "static/js/1.d7de5271.chunk.js.map": "/DBMS-ECOMMERCE-FRONTEND/static/js/1.d7de5271.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/1.43898583.chunk.css.map": "/DBMS-ECOMMERCE-FRONTEND/static/css/1.43898583.chunk.css.map",
   "static/css/main.2e196c69.chunk.css.map": "/DBMS-ECOMMERCE-FRONTEND/static/css/main.2e196c69.chunk.css.map",
   "index.html": "/DBMS-ECOMMERCE-FRONTEND/index.html",
-  "precache-manifest.108ce99c25caa3bb5e772cae223cfc3e.js": "/DBMS-ECOMMERCE-FRONTEND/precache-manifest.108ce99c25caa3bb5e772cae223cfc3e.js",
+  "precache-manifest.3294f8430d4b421bf5358e1db9e2ba89.js": "/DBMS-ECOMMERCE-FRONTEND/precache-manifest.3294f8430d4b421bf5358e1db9e2ba89.js",
   "service-worker.js": "/DBMS-ECOMMERCE-FRONTEND/service-worker.js"
 }
