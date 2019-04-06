@@ -7,6 +7,7 @@ import SignUp from "./components/SignUp";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart";
 import Category from "./components/Category";
+import Order from "./components/Order";
 class App extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path="/product" component={ProductDetails} />
             <Route exact path="/cart" component={Cart} />
             <Route exact path="/category" component={Category} />
+            <Route exact path="/order" component={Order} />
           </Switch>
         </div>
       </BrowserRouter>

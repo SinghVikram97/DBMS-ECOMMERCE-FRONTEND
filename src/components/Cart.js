@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./Cart.css";
 import CartProduct from "./CartProduct";
+import { Link } from "react-router-dom";
 export default class Cart extends Component {
   state = {
     data: null,
@@ -179,7 +180,27 @@ export default class Cart extends Component {
               >
                 UPDATE CART
               </button>
-              <button
+              <Link
+                to="/order"
+                type="submit"
+                className="submit-button ml3"
+                style={{
+                  backgroundColor: "transparent",
+                  border: "2px solid #7d7a7a",
+                  borderRadius: "6px",
+                  fontSize: "15px",
+                  color: "rgb(73, 72, 72)",
+                  letterSpacing: "2px",
+                  paddingTop: "2.5%",
+                  paddingBottom: "2.5%",
+                  paddingLeft: "3%",
+                  paddingRight: "3%",
+                  textDecoration: "none"
+                }}
+              >
+                PROCEED TO CHECKOUT
+              </Link>
+              {/* <button
                 type="button"
                 className="submit-button ml3"
                 style={{
@@ -196,7 +217,7 @@ export default class Cart extends Component {
                 }}
               >
                 PROCEED TO CHECKOUT
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="row mt4">
