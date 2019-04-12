@@ -241,11 +241,11 @@ export default class Cart extends Component {
                 </button>
               </a> */}
               <StripeCheckout
-                label="Checkout" //Component button text
+                label="CHECKOUT" //Component button text
                 name="Order Details" //Modal Header
                 description="Here are details of your order"
                 panelLabel="Order" //Submit button in modal
-                amount={this.state.totalPrice * 100} //Amount in cents $9.99
+                amount={(this.state.totalPrice + 2500) * 100} //Amount in cents $9.99
                 token={this.onToken}
                 stripeKey={this.state.publishableKey}
                 billingAddress={false}
