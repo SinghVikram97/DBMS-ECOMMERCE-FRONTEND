@@ -4,7 +4,6 @@ import { Security, SecureRoute, ImplicitCallback } from "@okta/okta-react";
 
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 import ProductDetails from "./components/ProductDetails";
 import Cart from "./components/Cart";

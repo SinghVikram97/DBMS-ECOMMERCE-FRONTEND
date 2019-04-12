@@ -2,12 +2,17 @@ import React, { Component } from "react";
 import "./Cart.css";
 import CartProduct from "./CartProduct";
 import { Link } from "react-router-dom";
+import StripeCheckout from "react-stripe-checkout";
+import Axios from "axios";
+
 export default class Cart extends Component {
   state = {
     data: null,
     totalPrice: 0,
-    loading: true
+    loading: true,
+    publishableKey: "pk_test_ZU3mlTy0q00DATc9EyF9A8jX"
   };
+
   componentDidMount() {
     fetch("http://localhost:4444/cart/1", {
       method: "get"
@@ -31,6 +36,21 @@ export default class Cart extends Component {
         });
       });
   }
+  onToken = token => {
+    const body = {
+      amount: 999,
+      token: token
+    };
+    Axios.post("http://localhost:8000/payment", body)
+      .then(response => {
+        console.log(response);
+        alert("Payment Success");
+      })
+      .catch(error => {
+        console.log("Payment Error: ", error);
+        alert("Payment Error");
+      });
+  };
   addProduct = id => {
     // Add to cart
     fetch(`http://localhost:4444/cart/1/${id}`, {
@@ -180,7 +200,7 @@ export default class Cart extends Component {
               >
                 UPDATE CART
               </button>
-              <Link
+              {/* <Link
                 to="/order"
                 type="submit"
                 className="submit-button ml3"
@@ -199,25 +219,38 @@ export default class Cart extends Component {
                 }}
               >
                 PROCEED TO CHECKOUT
-              </Link>
-              {/* <button
-                type="button"
-                className="submit-button ml3"
-                style={{
-                  backgroundColor: "transparent",
-                  border: "2px solid #7d7a7a",
-                  borderRadius: "6px",
-                  fontSize: "15px",
-                  color: "rgb(73, 72, 72)",
-                  letterSpacing: "2px",
-                  paddingTop: "2.5%",
-                  paddingBottom: "2.5%",
-                  paddingLeft: "3%",
-                  paddingRight: "3%"
-                }}
-              >
-                PROCEED TO CHECKOUT
-              </button> */}
+              </Link> */}
+              {/* <a href="/order">
+                <button
+                  type="button"
+                  className="submit-button ml3"
+                  style={{
+                    backgroundColor: "transparent",
+                    border: "2px solid #7d7a7a",
+                    borderRadius: "6px",
+                    fontSize: "15px",
+                    color: "rgb(73, 72, 72)",
+                    letterSpacing: "2px",
+                    paddingTop: "2.5%",
+                    paddingBottom: "2.5%",
+                    paddingLeft: "3%",
+                    paddingRight: "3%"
+                  }}
+                >
+                  PROCEED TO CHECKOUT
+                </button>
+              </a> */}
+              <StripeCheckout
+                label="Checkout" //Component button text
+                name="Order Details" //Modal Header
+                description="Here are details of your order"
+                panelLabel="Order" //Submit button in modal
+                amount={this.state.totalPrice * 100} //Amount in cents $9.99
+                token={this.onToken}
+                stripeKey={this.state.publishableKey}
+                billingAddress={false}
+                style={{ backgroundColor: "red !important" }}
+              />
             </div>
           </div>
           <div className="row mt4">
